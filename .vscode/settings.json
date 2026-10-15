@@ -1,0 +1,45 @@
+{
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.eol": "\n",
+
+  "editor.wordWrap": "on",
+  "editor.rulers": [88],
+
+  "[markdown]": {
+    "editor.quickSuggestions": {
+      "other": false,
+      "comments": false,
+      "strings": false
+    }
+  },
+
+  "[quarto]": {
+    "editor.wordWrap": "on"
+  },
+
+  // 2026-09-08: MUST stay false. The R extension documents this setting as
+  // "Enable for radian console" and ships it false by default. This course does not
+  // install radian anywhere, so students run plain R, which does not consume the
+  // bracketed-paste escape sequences. They land in the console as literal text around
+  // every chunk (the stray [200~ and [201~ students report), and the broken first line
+  // leaves R at a + continuation prompt, so the NEXT Run Cell gets appended to the
+  // unfinished expression and two chunks appear to run as one. Reported across both
+  // courses. Do not set this true unless radian is actually part of the toolchain.
+  "r.bracketedPaste": false,
+
+  // 2026-08-29: install-r.qmd tells students to install httpgd and promises plots
+  // render in a VS Code panel, but the httpgd viewer is OFF by default -- it needs
+  // r.plot.useHttpgd, which was missing, so the promise would have failed in week 11
+  // for the whole class at once. sessionWatcher is what populates the Workspace
+  // panel (the RStudio environment-pane equivalent, also promised in that guide) and
+  // what the plot viewer attaches to; it defaults true in current versions, but it is
+  // stated here so a version change cannot silently break both panels.
+  "r.sessionWatcher": true,
+  "r.plot.useHttpgd": true,
+
+  "search.exclude": {
+    "**/.quarto": true,
+    "**/_site": true
+  }
+}
