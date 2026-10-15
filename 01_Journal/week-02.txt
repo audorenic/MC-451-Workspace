@@ -1,0 +1,24 @@
+# Week 02 Journal: <troubleshooter>
+
+**Reading:** <chapter or article>
+**Date:** <YYYY-MM-DD>
+
+## Reflection
+<!--
+The Troubleshooter
+  What broke, confused you, or did not work? Where exactly did you get stuck, what did you try, and what do you now think was actually going on?
+
+
+One of the biggest problems I had was simply figuring out how these apps work. For example, t took me a long time just to figure out what type of R to download that would work with my Windows computer. I made sure to follow the rundown provided, but I still had problems.
+
+The first issue was that I had a hard time cloning the workspace folder. One mistake I did make was took the URL from the search bar rather than the green code button. It obviously did not connect me, so I took it from the green code button and was in the clear. I may have been a little too unconfident though. I ended up cloning the workspace twice because I thought I messed up again, but really, it was just taking forever to load.
+
+Second, I had a hard time connecting to my Git from Visual Studio Code. I did not get the who are you? message, I just kept getting a message that said cannot find user. I kept clicking around before closing everything and restarting the process over entirely. That seemed to work and my repositories were correctly updated on my GitHub account. I honestly do not know exactly what happened, but I think that because I had just downloaded everything and had a bunch of tabs open, the path may have been obstructed.
+
+-->
+
+## Links
+
+- Related note: [ ](../02_Literature/)
+- Where this touches my project: [ ](../03_Project/)
+
